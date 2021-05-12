@@ -4,6 +4,6 @@
 
 This is a random horoscope generator.
 
-##Technologies
+## Technologies
 
 Project is created using javascript.
