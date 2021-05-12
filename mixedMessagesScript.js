@@ -11,4 +11,36 @@ const generateRandomNum = (num) => {
 };
 
 //Empty array for horoscope
-let horoscope = [];
+let randomHoroscope = [];
+
+//iterating through object
+for (let key in collectiveMessage){
+    let idx = generateRandomNum(collectiveMessage[key].length)
+
+    //Pushing options to randomHoroscope array
+    switch(key) {
+        case 'starSign':
+            randomHoroscope.push(`Your star sign today is: ${collectiveMessage[key][idx]}.`)
+            break
+        case 'horoscopeOutput':
+            randomHoroscope.push(`This means you will have: ${collectiveMessage[key][idx]}.`)
+            break
+        case 'advice':
+            randomHoroscope.push(`I'd advise to: ${collectiveMessage[key][idx]}.`)
+            break
+        default:
+            collectiveMessage.push('The world is coming to the end.');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
