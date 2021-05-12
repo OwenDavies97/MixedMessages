@@ -31,16 +31,11 @@ for (let key in collectiveMessage){
         default:
             collectiveMessage.push('The world is coming to the end.');
     }
+};
 
+const connectHoroscope = (horoscope) => {
+    const connectedArray = randomHoroscope.join('\n');
+    console.log(connectedArray);
+};
 
-
-
-
-
-
-
-
-
-
-
-}
+connectHoroscope(randomHoroscope);
